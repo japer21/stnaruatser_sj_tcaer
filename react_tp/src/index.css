@@ -1,0 +1,44 @@
+html, body {
+  margin: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 1.2em;
+}
+
+#page-numbers {
+  list-style: none;
+  display: flex;
+}
+
+#page-numbers > li {
+  margin-right: 0.3em;
+  color: blue;
+  user-select: none;
+  cursor: pointer;
+}
+
+.pagination {
+    display: inline-block;
+    margin: 20px
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    pointer-events: none;
+   cursor: default;
+}
+
+.pagination a.inactiveLink {
+   pointer-events: none;
+   cursor: default;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
